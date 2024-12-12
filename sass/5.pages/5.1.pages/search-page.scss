@@ -1,0 +1,105 @@
+.search-page__body{
+
+    .navigation-section{ 
+        #mainNavigation{
+            @media screen and (min-width:1121px) and (max-width:1300px){
+              border-bottom: 1px solid $colour-gray;
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        background-color: $colour-dark-gray3;
+        color: $colour-primary;
+        .navigationWrapper{
+            background-color: $colour-dark-gray3;
+            color: $colour-primary;
+            .hamburger {
+                svg{
+                  color: $colour-primary;
+                  background-color: $colour-dark-gray3;
+                }
+              }
+        }
+        .date{
+            color: $colour-dark-gray;
+        }
+        article{
+            border-top: 1px solid $colour-gray;
+        }
+    }
+
+    #categorieNavigation{
+        visibility: hidden;
+        display: none;
+    }
+    .article-content{
+        img{
+            margin-bottom:30px ;
+        }
+        p{
+            a{
+                color: $colour-blue;
+                text-decoration: none;
+            }
+            @media (max-width:600px){
+                margin-bottom: 30px;
+                font-size: 1.55em;
+            }
+            @media (min-width:601px){
+                margin-bottom: 40px;
+                font-size: 2em;
+            }
+
+            font-weight: 200;
+            font-family: SwiftNeue,SwiftNeueFallback,serif;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            opacity: 1;
+        }
+    }
+    
+}
+
+.search-result-page__body{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    #categorieNavigation{
+        visibility: hidden;
+        display: none;
+    }
+    .article-content{
+        img{
+            margin-bottom:20px ;
+        }
+        p{
+            @media (max-width:600px){
+                margin-bottom: 30px;
+                font-size: 1.6em;
+            }
+            @media (min-width:601px){
+                margin-bottom: 40px;
+                font-size: 1.8em;
+            }
+
+            font-weight: 200;
+            font-family: SwiftNeue,SwiftNeueFallback,serif;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            opacity: 1;
+        }
+    }
+
+    .search-result__body__article--large{
+        h2,h4,p{
+            @media (min-width:993px){
+                margin: 0 15px 15px 15px;  
+            }
+        }
+        .article-meta-data{
+            font-size: 1.4em;
+        } 
+    
+    }
+}

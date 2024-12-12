@@ -1,0 +1,38 @@
+//  themes
+
+//  utils
+@import "./2.utils/variables.scss"; 
+@import "./2.utils/fonts.scss"; 
+@import "./2.utils/colAndRowSystem.scss"; 
+//  base
+@import "./1.base/base.scss"; 
+@import "./1.base/structure.scss"; 
+@import "./1.base/typography.scss";
+@import "./1.base/navigation.scss";
+@import "./1.base/pageSections.scss";
+@import "./1.base/footer.scss";
+//  layout 
+
+//  components
+@import "./4.components/auto-email.scss";
+@import "./4.components/card.scss";
+@import "./4.components/join-us.scss";
+@import "./4.components/modal.scss";
+
+//  pages
+@import "./5.pages/5.1.pages/search-page.scss";
+@import "./5.pages/5.1.pages/about.scss";
+@import "./5.pages/5.1.pages/profile.scss";
+@import "./5.pages/5.1.pages/admin.scss";
+@import "./5.pages/5.1.pages/editPost.scss";
+
+
+@import "./5.pages/5.2.inner-pages/1.trending.scss";
+@import "./5.pages/5.2.inner-pages/2.side-latest.scss";
+@import "./5.pages/5.2.inner-pages/named-section.scss";
+@import "./5.pages/5.2.inner-pages/tech.scss";
+@import "./5.pages/5.2.inner-pages/envirement.scss";
+@import "./5.pages/5.2.inner-pages/justice.scss";
+@import "./5.pages/5.2.inner-pages/publish.scss";
+@import "./5.pages/5.2.inner-pages/sign-up-in.scss";
+//  vendors

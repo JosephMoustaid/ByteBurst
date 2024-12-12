@@ -1,0 +1,51 @@
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;  
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+/* Adjust margin and center horizontally */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+
+    /* Adjust width based on screen size */
+    @media screen and (max-width: 650px) {
+        width: 95%;
+        margin: 1% auto; /* Center vertically */
+    }
+    @media screen and (min-width: 651px) and (max-width: 800px) {
+        width: 75%;
+        margin: 1% auto; /* Center vertically */
+    }
+    @media screen and (min-width: 801px) and (max-width: 1100px) {
+        width: 70%;
+        margin: 1% auto; /* Center vertically */
+    }
+    @media screen and (min-width: 1101px) {
+        width: 50%;
+        margin: 1% auto; /* Center vertically */
+    }
+
+    /* Close button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

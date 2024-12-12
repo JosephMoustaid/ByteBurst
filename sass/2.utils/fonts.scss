@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'TIActuBeta';
+    src: url('https://theintercept.com/wp-content/themes/intercept/assets/fonts/TIActuBetaBold.woff2') format('woff');
+    /* Add other font formats if needed, like woff2, ttf, etc. */
+  }
+  
+  @font-face {
+    font-family: 'TIActuBetaFallback';
+    src: url('path/to/TIActuBetaFallback.woff') format('woff');   
+    /* Add other font formats if needed, like woff2, ttf, etc. */
+  }

@@ -1,0 +1,74 @@
+
+  .card {
+/* Adjust the height as needed */
+    margin: 40px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px $colour-border;
+    position: relative;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .card:hover {
+    transform: scale(1.005);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Adjust to give some space for the zoom effect */
+    left: -5px; /* Adjust to give some space for the zoom effect */
+    
+    width: calc(100% + 10px); 
+    height: calc(100% + 10px); 
+    background-size: 720px; /* Initial state, covering the entire container */
+    background-position: center;
+    z-index: -1;
+    transition: background-size 0.3s ease;
+  }
+  .card.card2 {
+    background-size: cover;
+    background-position: center;
+    /* Adjust other styles as needed */
+}
+ .card:hover::before {
+    background-size: 750px; /* Zoom in on hover */
+  }
+
+  .card-content {
+    margin-top: 90%;
+    padding: 20px;
+    color: $colour-primary; /* Set text color to white */
+    position: relative;
+    z-index: 1;
+    :hover{
+      text-decoration: underline;
+    }
+  }
+
+  .card-title {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .card-description {
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+  @media (min-width:600px) 
+    {
+      .card-title {
+        font-size: 2em;
+      }
+      .card-description {
+        font-size: 1.6em;
+      }
+    }
+
+
+  

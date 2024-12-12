@@ -1,0 +1,380 @@
+.page-sec {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-page__body{
+    // Mobile Phone DONE
+    @media (max-width:767px){
+        .side-latest
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 5;
+        }
+        .trending
+        {
+            grid-column: 1 / 13;
+            grid-row: 5 / 8; 
+        }
+        .important
+        {
+            grid-column: 1 / 13;
+            grid-row: 8 / 12; 
+        }
+        .tech
+        {
+            grid-column: 1 / 13;
+            grid-row: 12 / 16; 
+        }
+        .current-topic
+        {
+            grid-column: 1 / 13;
+            grid-row: 16 / 20; 
+        }
+        .current-topic2
+        {
+            grid-column: 1 / 13;
+            grid-row: 20 / 24; 
+        }
+        .most-searched-topics-helper
+        {
+            grid-column: 1 / 13;
+            grid-row: 24 / 28; 
+        }
+        .join-us{
+            grid-column: 1/13;
+            grid-row: 28/32;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 32/35;
+            padding: 25px;
+        }
+    }
+    
+    // Tablet
+    @media (min-width:768px) and (max-width:1023px){
+        .side-latest
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 4;
+        }
+        .trending
+        {
+            grid-column: 1 / 13;
+            grid-row: 4 / 7; 
+        }
+        .important
+        {
+            grid-column: 1 / 13;
+            grid-row: 7 / 11; 
+        }
+        .tech
+        {
+            grid-column: 1 / 13;
+            grid-row: 11 / 15; 
+        }
+        .current-topic
+        {
+            grid-column: 1 / 13;
+            grid-row: 15 / 19; 
+        }
+        .current-topic2
+        {
+            grid-column: 1 / 13;
+            grid-row: 19 / 23; 
+        }
+        .most-searched-topics-helper
+        {
+            grid-column: 1 / 13;
+            grid-row: 23 / 27; 
+        }
+        .join-us{
+            grid-column: 1/13;
+            grid-row: 27/30;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 30/33;
+            padding: 40px;
+        }
+    }
+    
+    // Desktop 
+    @media (min-width:1024px){
+    
+        .trending
+        {
+            grid-column: 1 / 10;
+            grid-row: 2 / 6; 
+        }
+        .side-latest
+        {
+            grid-column: 10 / 13;
+            grid-row: 2 / 6;
+        }
+        .important
+        {
+            grid-column: 1 / 13;
+            grid-row: 6 / 8; 
+        }
+        .tech
+        {
+            grid-column: 1 / 13;
+            grid-row: 8 / 10; 
+        }
+        .current-topic
+        {
+            grid-column: 1 / 13;
+            grid-row: 10 / 12; 
+        }
+        .current-topic2
+        {
+            grid-column: 1 / 13;
+            grid-row: 12 / 14; 
+        }
+        .most-searched-topics-helper
+        {
+            grid-column: 1 / 13;
+            grid-row: 14 / 16; 
+        }
+        .join-us
+        {
+            grid-column: 1 / 13;
+            grid-row: 16 / 18;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 18 / 20;
+            padding: 40px;
+        }
+    }
+}
+
+.search-page__body {
+    // Mobile Phone DONE
+    @media (max-width:767px){
+        .article-searched
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 7;
+        }
+        .join-us{
+            grid-column: 1/13;
+            grid-row: 7/9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 25px;
+        }
+    }
+    
+    // Tablet
+    @media (min-width:768px) and (max-width:1023px){
+        .article-searched
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 7;
+        }
+        .join-us{
+            grid-column: 1/13;
+            grid-row: 7/9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+    
+    // Desktop 
+    @media (min-width:1024px){
+    
+        .article-searched{
+            grid-column: 1 / 13;
+            grid-row:2/7;
+            article{
+                @media (max-width:900px){
+                    width: 95%;
+                }
+                @media (min-width:901px){
+                    width: 80%;
+                    font-size: 1.2em;
+                }
+                margin: auto;
+            }
+        } 
+        .join-us{
+            grid-column: 1/13;
+            grid-row: 7/9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+}
+
+.search-result-page__body{
+
+    // Mobile Phone DONE
+    @media (max-width:767px){
+        .article-searched
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 25px;
+        }
+    }
+    
+    // Tablet
+    @media (min-width:768px) and (max-width:1023px){
+        .article-searched
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+
+    // Desktop 
+    @media (min-width:1024px){
+    
+        .article-searched{
+            grid-column: 1 / 13;
+            grid-row:2/9;
+            article{
+                @media (max-width:900px){
+                    width: 95%;
+                }
+                @media (min-width:901px){
+                    width: 90%;
+                }
+                margin: auto;
+            }
+        } 
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+
+
+    // Desktop 
+    @media (min-width:1024px){
+        
+        .article-searched{
+            article{
+                @media (min-width:901px) and (max-width:1100px){
+                    width: 80%;
+                }
+                @media (min-width:1101px){
+                    width: 60%;
+                }
+                margin: auto;
+            }
+        }
+    }
+}
+
+.publish-form-page__body{
+
+        // Mobile Phone DONE
+    @media (max-width:767px){
+        .publish,.sign-up
+        {
+            grid-column: 1 / 13;
+            grid-row: 1 / 9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 25px;
+        }
+    }
+    
+    // Tablet
+    @media (min-width:768px) and (max-width:1023px){
+        .publish,.sign-up
+        {
+            grid-column: 1 / 13;
+            grid-row: 1 / 9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+
+    // Desktop 
+    @media (min-width:1024px){
+    
+        .publish,.sign-up{
+            grid-column: 1 / 13;
+            grid-row:1/9;
+        } 
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+}
+
+.about-body{
+     // Mobile Phone DONE
+     @media (max-width:767px){
+        .about-us
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 25px;
+        }
+    }
+    
+    // Tablet
+    @media (min-width:768px) and (max-width:1023px){
+        .about-us
+        {
+            grid-column: 1 / 13;
+            grid-row: 2 / 9;
+        }
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+
+    // Desktop 
+    @media (min-width:1024px){
+    
+        .about-us{
+            grid-column: 1 / 13;
+            grid-row: 2 / 9;
+        } 
+        .site-footer{
+            grid-column: 1/13;
+            grid-row: 9/11;
+            padding: 40px;
+        }
+    }
+}

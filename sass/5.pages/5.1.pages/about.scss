@@ -1,0 +1,131 @@
+.about-body  {
+
+
+      background-color: $colour-primary;
+      color: $colour-secondary;
+      $colour-border: rgba(255, 255, 255, 0.1);
+      .navigationWrapper{
+          background-color: $colour-secondary;
+          color: $colour-primary;
+          .hamburger {
+              svg{
+                width: 40px;
+                height: 40px;
+                color: $colour-primary;
+                background-color: $colour-secondary;
+              }
+            }
+      }
+      footer{
+          background-color: $colour-primary;
+      }
+
+
+    .navigationWrapper{
+        .navigation-section{
+
+            /* hide navbar and show menu if device is smaller than 1126px width */
+            @media screen and (max-width: 1400px) {
+            #mainNavigation, #categorieNavigation {
+              display: none;
+            }
+            #hamburger , #phoneLogo{
+                width: 20px;
+                height: 20px;
+                display:unset;
+            }
+          }
+          
+          @media screen and (min-width: 1401px) {
+            #hamburger , #phoneLogo{
+              width: 0px;
+              height: 0px;
+              display: none;
+            }
+          }
+
+          
+
+            @media screen and (max-width: 1400px) {
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto auto ;
+            }
+
+            @media (min-width:1024px) and (max-width:1400px){
+                padding: 40px;
+                margin:-4px 0 auto;
+            }
+            @media (min-width:1401px){
+                padding: 40px;
+                margin:-5px 0 auto;
+            }
+        }
+    }
+
+    .about-us{
+      margin: auto;
+      @media screen and (max-width: 768px) {
+          width: 100%;
+      }
+      @media screen and (min-width: 769px) and (max-width: 1020px) {
+          width: 95%;
+      }
+      @media screen and (min-width: 1021px) and (max-width: 1400px) {
+         width: 90%;
+      }
+      @media screen and (min-width: 1401px)  {
+        width: 80%;
+     }
+
+      h6{
+        text-transform: uppercase;
+        font-size: 1.5em;
+        color: $colour-dark-gray;
+        font-weight: 100;
+        line-height: .8;
+        margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif ;
+      }
+      text-align: start;
+      div{
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+        h2{
+          font-family: 'TIActuBeta','TIActuBetaFallback',sans-serif;
+          border-top: 1px solid $colour-dark-gray3;
+          padding-top: 30px;
+          font-size: 7em;
+          @media screen and (max-width:1000px) {
+            font-size: 3em;
+          }
+          margin-bottom: 30px ; 
+          font-weight: 900;
+          line-height: 1em;
+          -webkit-font-smoothing: antialiased;
+        }
+        p,li{
+          span{
+            width: 50px;
+            height: 20px;
+            background-color: $colour-blue;
+            color: $colour-blue;
+          }
+          tab-size: 4;
+          font-weight: 500;
+          font-family: SwiftNeue,SwiftNeueFallback,serif;
+          font-feature-settings: "kern" 1;
+          font-variation-settings: normal;
+          opacity: 1;
+          font-size: 2.4em;
+          line-height: 1.4;
+          @media screen and (max-width:1000px) {
+            font-size: 1.4em;
+          } 
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+}

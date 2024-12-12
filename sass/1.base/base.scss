@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    max-width: 2300px;
+    margin: auto;
+    // 10px div by def of 16px
+    
+    @media screen and (max-width: 1000px) {
+        font-size: 60.5%;
+      }
+      @media screen and (min-width: 1001px)  and (max-width: 1250px){
+        font-size: 55%;
+      }
+      @media screen and (min-width: 1251px){
+        font-size: 60.5%;
+      }
+    & body {
+        //background-color: $colour-primary;
+        font-family: 'TIActuBeta','TIActuBetaFallback';
+        font-kerning: normal; 
+        font-feature-settings: "kern" 1;
+        font-weight: 600;
+          
+        letter-spacing: .8px;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+
+        & #blue{
+            background-color: $colour-blue;
+        }
+        & #lightBlue{
+            background-color: $colour-light-blue;
+        }
+        & #red{
+            background-color: $colour-red;
+        }
+        & #orange{
+            background-color: $colour-orange;
+        }
+        & #beige{
+            background-color: $colour-beige;
+        }
+
+        
+        .side-articles{
+            padding: 20px;
+            padding: 10px;
+            margin-bottom: 15px;
+            .article-content{
+                padding: 5px 15px;
+                img{
+                    width: 150px;
+                    height: auto;
+                }
+            }
+         }
+
+
+        /* Initially hide elements with the "reveal" class */
+        .reveal {
+            opacity: 0;
+            transform: translateY(100px); /* Adjust the initial translateY value */
+            transition:  0.5s ease, transform 0.5s ease;
+        }
+
+        /* Apply styles to revealed elements */
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+  
+      }
+
+      .line , .main-line{
+        width: 80px;
+        border-top: 10px solid $colour-secondary; 
+        margin-bottom: 10px;
+        @media screen and (max-width:1300px) {
+            border-top: 10px solid $colour-primary; 
+        }
+    }
+
+
+    a:visited & .pagination-links {
+        color: $colour-blue;
+        text-decoration: underline; 
+    }
+    .message-window {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 300px;
+        max-width: 500px;
+        height: 200px; // Updated height for equal sections
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        margin: 0;
+        font-size: 2em;
+      
+        display: flex;
+        flex-direction: column;
+      
+        .message-header,
+        .message-header-failed,
+        .message-body,
+        .message-footer {
+            flex: 1; // Equal height for all sections
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      
+        .message-header {
+            background-color: #4caf50;
+            color: white;
+        }
+      
+        .message-header-failed {
+            background-color: #e42c29;
+            color: white;
+        }
+      
+        .message-body {
+            text-align: center;
+            padding: 20px;
+        }
+      
+        .message-footer {
+            border-top: 1px solid #ccc;
+        }
+      
+        .close-btn {
+            padding: 5px 15px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+      
+        .close-btn:hover {
+            background-color: #ddd;
+        }
+      }
+
+}
+
+

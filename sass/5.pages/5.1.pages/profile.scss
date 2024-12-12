@@ -1,0 +1,52 @@
+.profile-body{
+    .profile form {
+        border: 2px solid #ccc;
+        margin-top: 10px;
+        border-radius: 20px;
+        width: 90%; /* Adjust the width of the form */
+        margin: auto;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+      .logout {
+        border: 1px solid $colour-gray;
+        border-radius: 10px;
+        background-color: $colour-blue;
+        padding: 10px;
+        font-size: 1.6em;
+        color: $colour-primary;
+      }
+    }
+    .last-con{
+        justify-content: center;
+    }
+    .profile form .input-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%; /* Adjusted to 100% for smaller devices */
+    
+        /* Style for heading */
+        h6 {
+            flex: 1 1 100%; /* Take up full width on smaller devices */
+            margin: 0;
+            padding: 10px;
+            border-radius: 20px 20px 0 0; /* Adjusted to have rounded corners on top */
+            background-color: #f0f0f0; /* Adding a background color */
+        }
+    
+        /* Style for input */
+        input,select {
+            flex: 1 1 100%; /* Take up full width on smaller devices */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 0 0 20px 20px; /* Adjusted to have rounded corners on bottom */
+            margin-top: -1px; /* Adjusted to remove gap between input and heading */
+        }
+    
+    
+        
+    }
+    
+}
